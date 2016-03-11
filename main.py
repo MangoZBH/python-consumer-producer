@@ -20,13 +20,15 @@ print("Main - Creating Producer")
 producer = Producer(monitor, number_of_entries)
 
 print("Main - Starting Threads")
+
 # start the producer thread
 producer.start()
 # start the consumer thread
 consumer.start()
-# join threads to the main thread
 
+# join threads to the main thread
 producer.join()
 consumer.join()
+
 
 print("Main - Simulation Complete")

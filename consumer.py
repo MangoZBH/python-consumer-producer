@@ -23,4 +23,3 @@ class Consumer(Thread):
             if number != -2:
                 'print what you found'
                 print("Consumer - Fetched From Monitor : " + str(number))
-
